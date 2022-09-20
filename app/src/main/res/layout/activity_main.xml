@@ -28,6 +28,16 @@
             android:textSize="10pt"/>
 
         <TextView
+            android:id="@+id/total_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengeluaran: "
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/total_pemasukan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,15 +47,7 @@
             android:textSize="9pt"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/total_pengeluaran"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pengeluaran: "
-            android:textAlignment="center"
-            android:textColor="@color/red"
-            android:textSize="9pt"
-            android:textStyle="bold" />
+
     </LinearLayout>
 
     <com.github.mikephil.charting.charts.LineChart

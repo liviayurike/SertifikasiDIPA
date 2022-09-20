@@ -9,9 +9,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.android.mycashbook.R;
+
 public class LoginActivity extends Activity {
     EditText username, password;
     Button login;
+    TextView daftar;
 
     private org.android.mycashbook.DBHelper databaseHelper;
     @Override
@@ -24,6 +27,16 @@ public class LoginActivity extends Activity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
+        daftar = findViewById(R.id.klikdaftar);
+
+        daftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), org.android.mycashbook.DaftarActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

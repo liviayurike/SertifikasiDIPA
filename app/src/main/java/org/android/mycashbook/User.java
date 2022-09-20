@@ -2,8 +2,8 @@ package org.android.mycashbook;
 
 public class User {
     private int id;
-    private String username;
-    private String password;
+    private String username = "user";
+    private String password = " user";
 
     public int getId() {
         return id;

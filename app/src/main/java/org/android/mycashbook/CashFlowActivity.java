@@ -45,7 +45,7 @@ public class CashFlowActivity extends AppCompatActivity {
             @Override
             protected Void doInBackground(Void... params) {
                 listCashflow.clear();
-                listCashflow.addAll(databaseHelper.getAllCashflow(getIntent().getStringExtra("username")));
+                listCashflow.addAll(databaseHelper.getAllCashflow(getIntent().getStringExtra("user")));
                 return null;
             }
             @Override
@@ -58,7 +58,7 @@ public class CashFlowActivity extends AppCompatActivity {
 
     public void toHomeee(View view) {
         Intent intent = new Intent(getApplicationContext(), org.android.mycashbook.MainActivity.class);
-        intent.putExtra("username", getIntent().getStringExtra("username"));
+        intent.putExtra("user", getIntent().getStringExtra("user"));
         startActivity(intent);
         finish();
     }

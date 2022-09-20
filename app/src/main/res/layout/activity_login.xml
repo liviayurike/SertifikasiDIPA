@@ -9,19 +9,19 @@
 
     <ImageView
         android:id="@+id/logoawal"
-        android:layout_width="232dp"
+        android:layout_width="277dp"
         android:layout_height="272dp"
-        android:src="@drawable/logo"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="My CashBook v1.0"
+        android:text="MyCashBook v1.0"
         android:textAlignment="center"
-        android:textColor="#0077b6"
+        android:textColor="#020507"
         android:textSize="16pt"
         android:textStyle="bold" />
 
@@ -58,5 +58,15 @@
         android:backgroundTint="#689F38"
         android:padding="20dp"
         android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/klikdaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Daftar Disini!"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
 </LinearLayout>

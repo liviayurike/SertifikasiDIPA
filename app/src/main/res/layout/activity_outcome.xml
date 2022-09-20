@@ -93,13 +93,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#2a6f97"
+        android:backgroundTint="#689F38"
         android:text="Simpan" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#c9184a"
+        android:backgroundTint="#F57C00"
         android:onClick="toHomee"
         android:text="Kembali" />
 
